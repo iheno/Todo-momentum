@@ -1,0 +1,143 @@
+body {
+  background: #333333;
+  color: #ffffff;
+  text-shadow: 0 1px 5px rgba(0,0,0,.1);
+}
+
+ul li {
+  list-style: none;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 6rem;
+  line-height: 0.8rem;
+}
+
+.container {
+  max-width: 1140px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%,-50%);
+}
+
+.js-toDoList {
+  margin: 30px auto;
+  padding: 0;
+  width: 300px;
+}
+.js-toDoList li {
+  padding-bottom: 10px;
+  float: left;
+  padding-right: 10px;
+}
+
+.js-toDoList button {
+  color: #ffffff;
+  background: none;
+  border-radius: 5px;
+  border: 1px solid rgba(255,255,255,0.2);
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+}
+.js-toDoList button:hover{
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.3);
+}
+.js-toDoList span{
+  padding-left: 10px;
+  vertical-align: middle;
+}
+
+.form {
+  display: none;
+}
+
+.js-toDoForm input::-webkit-input-placeholder { /* Edge */
+  color: #fff;
+}
+.js-form input::-webkit-input-placeholder { /* Edge */
+  color: #fff;
+}
+
+.js-form input {
+  margin: 0 auto 20px;
+  width: 300px;
+  padding: 4px 0 6px 0;
+  display: block;
+  background: 0;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  outline: 0;
+  text-align: center;
+  transition: border-color .2s ease;
+}
+
+.js-toDoForm input {
+  margin: 0 auto;
+  width: 300px;
+  padding: 4px 0 6px 0;
+  display: block;
+  background: 0;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  outline: 0;
+  text-align: center;
+  transition: border-color .2s ease;
+}
+
+.greetings {
+  display: none;
+  font-size: 24px;
+}
+
+.showing {
+  display: block;
+}
+
+.js-weather {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-align: right;
+  font-size: 14px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn .5s linear;
+  background-size: cover;
+  background-position: center;
+}
